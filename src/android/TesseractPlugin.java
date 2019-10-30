@@ -34,7 +34,7 @@ import android.content.Context;
 public class TesseractPlugin extends CordovaPlugin {
     public static final String DATA_PATH = Environment.getExternalStorageDirectory().toString() + "/OCRFolder/";
     private static final String TAG = "TesseractPlugin";
-    private String lang = "por";
+    private String lang = "rob";
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
