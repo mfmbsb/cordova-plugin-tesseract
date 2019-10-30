@@ -1,4 +1,4 @@
-package com.gmazzoni.cordova;
+package com.brweb.cordova;
 
 import java.io.File;
 import java.io.FileOutputStream;
