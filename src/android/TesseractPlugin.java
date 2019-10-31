@@ -32,8 +32,8 @@ import android.util.Log;
 import android.content.Context;
 
 public class TesseractPlugin extends CordovaPlugin {
-    //public static final String DATA_PATH = Environment.getExternalStorageDirectory().toString() + "/OCRFolder/";
-    public static final String DATA_PATH = Environment.getDataDirectory().toString() + "/tessdata/";
+    public static final String DATA_PATH = Environment.getExternalStorageDirectory().toString() + "/OCRFolder/";
+    //public static final String DATA_PATH = Environment.getDataDirectory().toString() + "/OCRFolder/";
     private static final String TAG = "TesseractPlugin";
     private String lang = "rob";
 
@@ -140,7 +140,10 @@ public class TesseractPlugin extends CordovaPlugin {
             try {
                 Log.v(TAG, "Downloading " + lang + ".traineddata");
                 // tess two now supports tessdata 3.04, and switching to official repo 
-                String stringURL = "https://github.com/tesseract-ocr/tessdata/raw/3.04.00/" + lang + ".traineddata";
+                //String stringURL = "https://github.com/tesseract-ocr/tessdata/raw/3.04.00/" + lang + ".traineddata";
+		//producao
+		//String stringURL = "https://www.brcondominio.com.br/br1/app/tessdata/" + lang + ".traineddata";
+		String stringURL = "http://192.168.226.10/br1/consulta/novo/tessdata/" + lang + ".traineddata";
                 Log.v(TAG, "downloading from url " + stringURL);
                 URL url = new URL(stringURL);
 
