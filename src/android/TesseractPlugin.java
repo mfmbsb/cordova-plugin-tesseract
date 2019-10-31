@@ -32,7 +32,8 @@ import android.util.Log;
 import android.content.Context;
 
 public class TesseractPlugin extends CordovaPlugin {
-    public static final String DATA_PATH = Environment.getExternalStorageDirectory().toString() + "/OCRFolder/";
+    //public static final String DATA_PATH = Environment.getExternalStorageDirectory().toString() + "/OCRFolder/";
+    public static final String DATA_PATH = Environment.getDataDirectory().toString() + "/tessdata/";
     private static final String TAG = "TesseractPlugin";
     private String lang = "rob";
 
